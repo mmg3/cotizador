@@ -1,3 +1,37 @@
+var app = {
+    // Application Constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    // deviceready Event Handler
+    //
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicity call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+        app.receivedEvent('deviceready');
+        navigator.splashscreen.hide();
+    },
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+        window.location="cotizador.html";
+    }
+};
+
 $(document).ready(function(){
 
     $("#menuRamos li").click( function() {
@@ -633,6 +667,13 @@ $(document).ready(function(){
             var j = 0;
             anualInteresesInd[j] = 0;
             fecha = constFecha;
+            
+            fechaArray = new Array();
+                
+            fechaArray = fecha.split('/');
+
+            fecha = fechaArray[2]+"-"+fechaArray[1]+"-"+fechaArray[0];
+            
             for(i = 0; i < parseInt($('#anios').val())*12; i++)
             {
                 /*if(i%12 == 0 && i > 11)
@@ -1072,6 +1113,13 @@ $(document).ready(function(){
             var j = 0;
             anualinteresesCol[j] = 0;
             fecha = constFecha;
+            
+            fechaArray = new Array();
+                
+            fechaArray = fecha.split('/');
+
+            fecha = fechaArray[2]+"-"+fechaArray[1]+"-"+fechaArray[0];
+            
             for(i = 0; i < parseInt($('#anios').val())*12; i++)
             {
                 
@@ -1087,10 +1135,10 @@ $(document).ready(function(){
                 if(i == 0)
                     var columnaanio = '<td rowspan="12" align="center">'+(j)+'</td>';
 
-                fecha=fecha.replace("-", "/").replace("-", "/");
+                //fecha=fecha.replace("/", "-").replace("/", "-");
                 fecha= new Date(fecha);
                 fecha.setDate(fecha.getDate()+sumarDias);
-
+                
                 var anio=fecha.getFullYear();
                 var mes= fecha.getMonth()+1;
                 var dia= fecha.getDate();
@@ -1102,7 +1150,7 @@ $(document).ready(function(){
                 if(dia.toString().length<2){
                     dia="0".concat(dia);
                 }
-
+                
                 /*saldoCol = saldoCol - dividendoCol;
                 numero = 1 + i;
 
@@ -1118,7 +1166,7 @@ $(document).ready(function(){
 
                 datostabla = datostabla + '<tr '+fondo+'><td>' + numero + '</td><td align="left">' + dia+"/"+mes+"/"+anio + '</td><td align="right">' + formato_numero(saldoCol,2,'.',',') + '</td><td align="right">' + formato_numero(interesesCol,2,'.',',') + '</td><td align="right">' + formato_numero(dividendoCol,2,'.',',') + '</td><td align="right">' + formato_numero(Math.round((interesesCol+dividendoCol)*100)/100,2,'.',',') + '</td>'+  '</tr>';
                 cuotasSeguroCol[i] = Math.round((interesesCol+dividendoCol)*100)/100;
-                fecha = anio+"-"+mes+"-"+dia;
+                fecha = parseInt(anio)+"-"+parseInt(mes)+"-"+parseInt(dia);
                 
                 if(i%12 == 0 && i > 11)
                 {
@@ -1225,14 +1273,27 @@ $(document).ready(function(){
                 html += '<td colspan="3" style="width:25%; text-align:center;" width="68">A&Ntilde;O '+(i+1)+'</td>';
                 html += '</tr>';
                 
+                fechaArray = new Array();
+                
+                fechaArray = fecha.split('/');
+                
+                fecha = fechaArray[2]+"-"+fechaArray[1]+"-"+fechaArray[0];
+                
                 for(h = 0; h < 12; h++)
                 {
-                    fecha=fecha.replace("-", "/").replace("-", "/");
+                    //fecha=fecha.replace("-", "/").replace("-", "/");
+                    fecha=fecha.replace("/", "-").replace("/", "-");
+                    //alert(fecha);
                     fecha= new Date(fecha);
+                    
                     if(h == 0 && i == 0)
                         fecha.setDate(fecha.getDate());
                     else
+                    {
+                        //addDays(fecha,sumarDias);
                         fecha.setDate(fecha.getDate()+sumarDias);
+                    }
+                        
 
                     var anio=fecha.getFullYear();
                     var mes= fecha.getMonth()+1;
@@ -1240,13 +1301,13 @@ $(document).ready(function(){
                     
                     mesDeprecia = mes-1;
                     
-                    if(mes.toString().length<2){
+                    /*if(mes.toString().length<2){
                         mes="0".concat(mes);
                     }
 
                     if(dia.toString().length<2){
                         dia="0".concat(dia);
-                    }
+                    }*/
                     
                     var mesNombre = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
                     
