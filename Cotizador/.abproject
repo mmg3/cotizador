@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Cotizador",
+  "ProjectGuid": "9de0257d-6953-405b-af82-f88cabd6e90e",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Cotizador",
+  "DisplayName": "Cotizador",
+  "Author": "",
+  "Description": "Cotizador",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{9aca8184-5a82-4c98-b92e-715659ba45f6}",
+  "WP8ProductID": "{b9339ec4-ed5e-48b0-8b12-ea4ae3aa586c}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Cotizador",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
