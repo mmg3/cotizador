@@ -2,7 +2,7 @@
   "ProjectName": "Cotizador",
   "ProjectGuid": "9de0257d-6953-405b-af82-f88cabd6e90e",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.Cotizador",
+  "AppIdentifier": "com.grupoconfia.Cotizador",
   "DisplayName": "Cotizador",
   "Author": "",
   "Description": "Cotizador",
@@ -15,9 +15,7 @@
   "iOSBackgroundMode": [],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "4.0.0",
-  "AndroidPermissions": [
-    "android.permission.INTERNET"
-  ],
+  "AndroidPermissions": [],
   "DeviceOrientations": [
     "Portrait",
     "Landscape"
@@ -25,12 +23,9 @@
   "AndroidHardwareAcceleration": "true",
   "iOSStatusBarStyle": "Default",
   "Framework": "Cordova",
-  "WP8TileTitle": "",
+  "WP8TileTitle": "Cotizador",
   "WP8Publisher": "",
-  "WP8Capabilities": [
-    "ID_CAP_NETWORKING",
-    "ID_CAP_WEBBROWSERCOMPONENT"
-  ],
+  "WP8Capabilities": [],
   "WP8Requirements": [],
   "WP8PublisherID": "{9aca8184-5a82-4c98-b92e-715659ba45f6}",
   "WP8ProductID": "{b9339ec4-ed5e-48b0-8b12-ea4ae3aa586c}",
@@ -41,5 +36,13 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
+  ],
+  "iOSDeploymentTarget": "6.0",
+  "CorePlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-device-orientation",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-whitelist",
+    "org.apache.cordova.labs.keyboard"
   ]
 }

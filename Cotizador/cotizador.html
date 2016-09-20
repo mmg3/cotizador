@@ -20,12 +20,6 @@
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="./images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
     
     <link rel="stylesheet" href="./css/icon.css">
     <link rel="stylesheet" href="./css/material.min.css">
@@ -105,19 +99,7 @@
                       <tr>
                         <td class="mdl-color--primary-dark colorFuente" style="font-weight:bold;text-align:center;">RAMO</td>
                         <td style="text-align:center;">
-                          <!--<div class="demo-avatar-dropdown">
-                            <span>VEHICULOS</span>
-                            <div class="mdl-layout-spacer"></div>
-                            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                              <i class="material-icons" role="presentation">arrow_drop_down</i>
-                              <span class="visuallyhidden">Accounts</span>
-                            </button>
-                            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-                              <li class="mdl-menu__item">hello@example.com</li>
-                              <li class="mdl-menu__item">info@example.com</li>
-                              <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
-                            </ul>
-                          </div>-->
+                          
                             <span id="nombreRamo">VEHICULOS</span>
                             <button id="demo-menu-lower-right"
                                     class="mdl-button mdl-js-button mdl-button--icon">
@@ -162,7 +144,7 @@
                         <td style="width: 70%;">N&uacute;mero de Clientes</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="10000.00" id="numClientes" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="10000.00" id="numClientes" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="numClientes">0.0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -172,8 +154,8 @@
                         <td>Valor Asegurable promedio</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="12000.00" id="valorAsegurado" />
-                                <input style="text-align:right;display:none;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="ed_total" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="12000.00" id="valorAsegurado" />
+                                <input style="text-align:right;display:none;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="ed_total" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="valorAsegurado">0.00</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -183,7 +165,7 @@
                         <td>Tasa financiamiento</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="15.00" id="tasaFinanciamiento" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="15.00" id="tasaFinanciamiento" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaFinanciamiento">0.00</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -193,7 +175,7 @@
                         <td>Tasa Inicial</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="3.5" id="tasaSeguro" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="3.5" id="tasaSeguro" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaSeguro">0.0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -203,7 +185,7 @@
                         <td>Tasa Final</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="4.2" id="tasaFinanciado" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="4.2" id="tasaFinanciado" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaFinanciado">0.0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -213,7 +195,7 @@
                         <td>Depreciaci&oacute;n 1er a&ntilde;o</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="0" id="porcDepreciacion1" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="0" id="porcDepreciacion1" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaFinanciado">0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -223,7 +205,7 @@
                         <td>Depreciaci&oacute;n siguientes a&ntilde;os</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="0" id="porcDepreciacion2" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="0" id="porcDepreciacion2" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaFinanciado">0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -233,7 +215,7 @@
                         <td>Tasa Beneficio Cliente</td>
                         <td style="width: 30%;">
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="60.00" id="tasaBeneficioCliente" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="60.00" id="tasaBeneficioCliente" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaBeneficioCliente">0.0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -251,7 +233,7 @@
                   <tr>
                     <td width="52%">&nbsp;</td>
                     <td width="38%"><div class="mdl-textfield mdl-js-textfield">
-                        <input style="text-align:center;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="5" id="anios">
+                        <input style="text-align:center;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="5" id="anios">
                         <label style="text-align:center;" class="mdl-textfield__label" for="anios">5</label>
                         <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                       </div></td>
@@ -275,7 +257,7 @@
                     <td><span style="float:right;">Diferencial valor</span></td>
                     <td style="width: 30%;">
                         <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                            <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="diferencialCalculado" readonly />
+                            <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="diferencialCalculado" readonly />
                             <label style="text-align:right;" class="mdl-textfield__label" for="diferencial">0</label>
                             <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                         </div>
@@ -288,7 +270,7 @@
                     <td><span style="float:right;">Rendimiento %</span></td>
                     <td style="width: 30%;">
                         <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                            <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="rendimientoCalculado" readonly />
+                            <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="rendimientoCalculado" readonly />
                             <label style="text-align:right;" class="mdl-textfield__label" for="rendimiento">0</label>
                             <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                         </div>
@@ -302,114 +284,10 @@
         </div>
         <div class="mdl-layout__tab-panel" id="escenarios">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="divAnios">
-            <!--<div class="mdl-card mdl-cell mdl-cell--6-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                  <table width="100%" style="border:#000 solid 1px; border-radius:1em;">
-                      <tr>
-                        <td colspan="2"><b>AÑO 1</b></td>
-                      </tr>
-                      <tr>
-                        <td width="55%">&nbsp;</td>
-                        <td width="45%">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor asegurable</span></td>
-                        <td><label style="float:right;" id="lblValorAsegurado">12000.0</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor tasa de riesgo</span></td>
-                        <td><label style="float:right;" id="lblValorTasa">504.00</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Impuesto SB</span></td>
-                        <td><label style="float:right;" id="lblValorSB">17.64</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">SUBTOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorSubtotal">521.6</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">IVA</span></td>
-                        <td><label style="float:right;" id="lblValorIVA">62.60</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">TOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorTotal">584.24</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;"><label id="lblNumeroCuotas">12</label> CUOTAS</span></td>
-                        <td><label style="float:right;" id="lblValorCuota">48.69</label></td>
-                      </tr>
-                    </table>
-              </div>
-            </div>-->
+            
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="divAnioUno">
-            <!--<div class="mdl-card mdl-cell mdl-cell--6-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                  <table width="100%" style="border:#000 solid 1px; border-radius:1em;">
-                      <tr>
-                        <td colspan="2"><b>AÑO 1</b></td>
-                      </tr>
-                      <tr>
-                        <td width="55%">&nbsp;</td>
-                        <td width="45%">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor asegurable</span></td>
-                        <td><label style="float:right;" id="lblValorAsegurado">12000.0</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor tasa de riesgo</span></td>
-                        <td><label style="float:right;" id="lblValorTasa">504.00</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Impuesto SB</span></td>
-                        <td><label style="float:right;" id="lblValorSB">17.64</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">SUBTOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorSubtotal">521.6</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">IVA</span></td>
-                        <td><label style="float:right;" id="lblValorIVA">62.60</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">TOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorTotal">584.24</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;"><label id="lblNumeroCuotas">12</label> CUOTAS</span></td>
-                        <td><label style="float:right;" id="lblValorCuota">48.69</label></td>
-                      </tr>
-                    </table>
-              </div>
-            </div>-->
+            
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -437,54 +315,7 @@
                             <td width="12%" style="text-align:right;">valorPenalización</td>
                           </tr>
                         
-                        <!--<table width="100%" border="0">
-                          <tr>
-                            <td>AÑO 1</td>
-                            <td style="text-align:right;">12</td>
-                            <td style="text-align:right;">48.69</td>
-                            <td style="text-align:right;">584.24</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:right;">1</td>
-                            <td style="text-align:right;">584.24</td>
-                            <td style="text-align:right;">519.97</td>
-                            <td style="text-align:right;color:#F00">64.27</td>
-                            <td style="text-align:right;color:#F00">64.27</td>
-                          </tr>
-                          <tr>
-                            <td>AÑO 2</td>
-                            <td style="text-align:right;">12</td>
-                            <td style="text-align:right;">37.98</td>
-                            <td style="text-align:right;">455.70</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:right;">2</td>
-                            <td style="text-align:right;">584.24</td>
-                            <td style="text-align:right;">519.97</td>
-                            <td style="text-align:right;">64.27</td>
-                            <td style="text-align:right;">64.27</td>
-                          </tr>
-                          <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:right;">1039.94</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:center;">TOTALES</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:right;">1039.94</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                          </tr>
-                          <tr>
-                            <td>&nbsp;</td>
-                            <td colspan="2" style="text-align:right;">Valor Cuota Promedio</td>
-                            <td style="text-align:right;">43.33</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>* Valores a ser cobrados a manera de 'penalización' en caso de que el cliente se retire del programa. Este cobro permitiría a la aseguradora cubrir la totalidad de la prima.</td>
-                          </tr>-->
+                        
                         </table>
               </div>
             </div>
@@ -492,44 +323,7 @@
         </div>
         <div class="mdl-layout__tab-panel" id="diferenciales">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="diferencialesValor">
-            <!--<div class="mdl-card mdl-cell mdl-cell--6-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                  <table width="100%" style="border:#000 solid 1px; border-radius:1em;">
-                      <tr>
-                        <td colspan="2"><b>AÑO 1</b></td>
-                      </tr>
-                      <tr>
-                        <td width="55%">&nbsp;</td>
-                        <td width="45%">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor asegurable</span></td>
-                        <td><label style="float:right;" id="lblValorAsegurado">12000.0</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor tasa inicial</span></td>
-                        <td><label style="float:right;" id="lblValorTasa">504.00</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor tasa final</span></td>
-                        <td><label style="float:right;" id="lblValorSB">17.64</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Diferencial a favor de financiera</span></td>
-                        <td><label style="float:right;" id="lblValorSubtotal">21.6</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">TOTAL INGRESO AÑO</span></td>
-                        <td><label style="float:right;" id="lblValorTotal">584.24</label></td>
-                      </tr>
-                    </table>
-              </div>
-            </div>-->
-              <h5 style="text-align:center;" class="mdl-cell mdl-cell--12-col">TOTAL DE INGRESOS EN 2 AÑOS: 1,495,200.00</h5>
+            <h5 style="text-align:center;" class="mdl-cell mdl-cell--12-col">TOTAL DE INGRESOS EN 2 AÑOS: 1,495,200.00</h5>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -538,7 +332,7 @@
                       <tr>
                         <td width="64%">Tasa de interés otorgada en mercado de valores (%):</td>
                         <td width="18%"><div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                            <input style="text-align:center;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="7" id="tasamercadoValores" />
+                            <input style="text-align:center;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="7" id="tasamercadoValores" />
                                                     <label style="text-align:right;" class="mdl-textfield__label" for="tasamercadoValores">0.00</label>
                                                     <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                         </div></td>
@@ -548,85 +342,14 @@
                       </tr>
                     </table>
                     <div id="totalRendimiento" style="width:80%"></div>
-                    <!--<table width="100%" border="0" id="totalRendimiento">
-                      <tr>
-                        <td style="text-align:right;">&nbsp;</td>
-                        <td style="text-align:right;">&nbsp;</td>
-                        <td style="text-align:right;">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:right;">AÑO 1</td>
-                        <td style="text-align:right;">840,000.00</td>
-                        <td style="text-align:right;">134,400.00</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:right;">AÑO 2</td>
-                        <td style="text-align:right;">655,200.00</td>
-                        <td style="text-align:right;">104,832.00</td>
-                      </tr>
-                      <tr>
-                        <td colspan="3" style="text-align:center;color:#f00"><b>TOTAL RENDIMIENTO 239,232.00</b></td>
-                      </tr>
-                    </table>-->
+                    
               </div>
             </div>
           </section>
         </div>
         <div class="mdl-layout__tab-panel" id="financiamiento">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="sectionFinanciamiento">
-            <!--<div class="mdl-card mdl-cell mdl-cell--6-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                  <table width="100%" style="border:#000 solid 1px; border-radius:1em;">
-                      <tr>
-                        <td colspan="2"><b>AÑO 1</b></td>
-                      </tr>
-                      <tr>
-                        <td width="55%">&nbsp;</td>
-                        <td width="45%">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor asegurable</span></td>
-                        <td><label style="float:right;" id="lblValorAsegurado">12000.0</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor tasa de riesgo</span></td>
-                        <td><label style="float:right;" id="lblValorTasa">504.00</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Impuesto SB</span></td>
-                        <td><label style="float:right;" id="lblValorSB">17.64</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">SUBTOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorSubtotal">521.6</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">IVA</span></td>
-                        <td><label style="float:right;" id="lblValorIVA">62.60</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">TOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorTotal">584.24</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;"><label id="lblNumeroCuotas">12</label> CUOTAS</span></td>
-                        <td><label style="float:right;" id="lblValorCuota">48.69</label></td>
-                      </tr>
-                    </table>
-              </div>
-            </div>-->
+            
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -643,49 +366,7 @@
                             <td width="10%" style="text-align:right;">PR. X IND</td>
                             <td width="15%" style="text-align:right;">PR. COLEC.</td>
                           </tr>
-                          <!--<tr>
-                            <td>AÑO 1</td>
-                            <td style="text-align:right;">12</td>
-                            <td style="text-align:right;">48.69</td>
-                            <td style="text-align:right;">584.24</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:right;">&nbsp;</td>
-                            <td style="text-align:right;">AÑO 1</td>
-                            <td style="text-align:right;">584.24</td>
-                            <td style="text-align:right;">5,842,368.00</td>
-                          </tr>
-                          <tr>
-                            <td>AÑO 2</td>
-                            <td style="text-align:right;">12</td>
-                            <td style="text-align:right;">37.98</td>
-                            <td style="text-align:right;">455.70</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:right;">&nbsp;</td>
-                            <td style="text-align:right;">AÑO 2</td>
-                            <td style="text-align:right;">455.70</td>
-                            <td style="text-align:right;">4,557,047.04</td>
-                          </tr>
-                          <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:right;">1,039.94</td>
-                            <td>&nbsp;</td>
-                            <td style="text-align:center;">&nbsp;</td>
-                            <td style="text-align:right;">&nbsp;</td>
-                            <td style="text-align:right;">1,039.94</td>
-                            <td style="text-align:right;">10,399,415.04</td>
-                          </tr>
-                          <tr>
-                            <td height="230">&nbsp;</td>
-                            <td colspan="2" style="text-align:right;">Valor Cuota Promedio</td>
-                            <td style="text-align:right;">43.33</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                          </tr>-->
+                          
                         </table>
               </div>
             </div>
@@ -693,59 +374,7 @@
         </div>
         <div class="mdl-layout__tab-panel" id="individual">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="sectionAmortIndividual">
-            <!--<div class="mdl-card mdl-cell mdl-cell--8-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                  <table width="100%" style="border:#000 solid 1px; border-radius:1em;">
-                      <tr>
-                        <td colspan="2"><b>AÑO 1</b></td>
-                      </tr>
-                      <tr>
-                        <td width="55%">&nbsp;</td>
-                        <td width="45%">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor asegurable</span></td>
-                        <td><label style="float:right;" id="lblValorAsegurado">12000.0</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor tasa de riesgo</span></td>
-                        <td><label style="float:right;" id="lblValorTasa">504.00</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Impuesto SB</span></td>
-                        <td><label style="float:right;" id="lblValorSB">17.64</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">SUBTOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorSubtotal">521.6</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">IVA</span></td>
-                        <td><label style="float:right;" id="lblValorIVA">62.60</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">TOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorTotal">584.24</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;"><label id="lblNumeroCuotas">12</label> CUOTAS</span></td>
-                        <td><label style="float:right;" id="lblValorCuota">48.69</label></td>
-                      </tr>
-                    </table>
-              </div>
-            </div>-->
+            
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -755,7 +384,7 @@
                         <td style="text-align:right;">Tasa Beneficio Cliente</td>
                         <td>
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="60.00" id="tasaBeneficioClienteInd" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="60.00" id="tasaBeneficioClienteInd" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaBeneficioClienteInd">0.0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -778,59 +407,7 @@
         </div>
         <div class="mdl-layout__tab-panel" id="colectivo">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="sectionAmortColectivo">
-            <!--<div class="mdl-card mdl-cell mdl-cell--8-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                  <table width="100%" style="border:#000 solid 1px; border-radius:1em;">
-                      <tr>
-                        <td colspan="2"><b>AÑO 1</b></td>
-                      </tr>
-                      <tr>
-                        <td width="55%">&nbsp;</td>
-                        <td width="45%">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor asegurable</span></td>
-                        <td><label style="float:right;" id="lblValorAsegurado">12000.0</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Valor tasa de riesgo</span></td>
-                        <td><label style="float:right;" id="lblValorTasa">504.00</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">Impuesto SB</span></td>
-                        <td><label style="float:right;" id="lblValorSB">17.64</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">SUBTOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorSubtotal">521.6</label></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">IVA</span></td>
-                        <td><label style="float:right;" id="lblValorIVA">62.60</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><hr></td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;">TOTAL</span></td>
-                        <td><label style="float:right;" id="lblValorTotal">584.24</label></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><span style="float:right;"><label id="lblNumeroCuotas">12</label> CUOTAS</span></td>
-                        <td><label style="float:right;" id="lblValorCuota">48.69</label></td>
-                      </tr>
-                    </table>
-              </div>
-            </div>-->
+            
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -840,7 +417,7 @@
                         <td style="text-align:right;">Tasa Beneficio Cliente</td>
                         <td>
                             <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
-                                <input style="text-align:right;" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="60.00" id="tasaBeneficioClienteCol" />
+                                <input style="text-align:right;" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" value="60.00" id="tasaBeneficioClienteCol" />
                                 <label style="text-align:right;" class="mdl-textfield__label" for="tasaBeneficioClienteCol">0.0</label>
                                 <span class="mdl-textfield__error">Por favor ingrese un numero</span>
                             </div>
@@ -904,59 +481,6 @@
             
           </section>
         </div>
-        <!--<footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              More Information
-            </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-            </ul>
-          </div>
-        </footer>-->
       </main>
     </div>
       
